@@ -27,3 +27,5 @@ for epoch in range(200):
 
     if epoch % 20 == 0:
         print(f"Epoch {epoch} | Loss {loss.item():.4f}")
+
+torch.save(model.state_dict(), "checkpoints/model.pt")
